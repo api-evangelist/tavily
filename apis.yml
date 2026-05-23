@@ -1,0 +1,139 @@
+aid: tavily
+name: Tavily
+description: >-
+  Tavily is a web access API platform optimized for LLMs and AI agents. It
+  exposes a unified REST surface for real-time web search, page content
+  extraction, site crawling, sitemap mapping, and AI-driven research tasks.
+  The platform emphasizes low-latency search with a 180ms p50 on the search
+  endpoint, a 99.99% uptime SLA, and built-in content validation safeguards.
+  Tavily ships Python and JavaScript SDKs and integrates cleanly with major
+  agent frameworks and LLM providers such as OpenAI, Anthropic, and Groq.
+  Used by more than a million developers, it is trusted by enterprise
+  customers including Databricks, IBM, JetBrains, MongoDB, and AWS.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Search
+  - Web Search
+  - AI Agents
+  - LLMs
+  - Extract
+  - Crawl
+  - Sitemap
+  - Research
+  - REST
+  - LangChain
+  - LlamaIndex
+  - Real-Time
+url: https://raw.githubusercontent.com/api-evangelist/tavily/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: tavily:web-api
+    name: Tavily Web API
+    description: >-
+      The Tavily Web API offers a unified set of endpoints for AI agents to
+      search the web, extract page content, crawl sites, map sitemaps, and run
+      AI research tasks. Endpoints are REST-based and authenticated with a
+      bearer API key.
+    humanURL: https://docs.tavily.com
+    baseURL: https://api.tavily.com
+    tags:
+      - Search
+      - Extract
+      - Crawl
+      - Map
+      - Research
+      - REST
+    properties:
+      - type: Documentation
+        url: https://docs.tavily.com
+      - type: GettingStarted
+        url: https://docs.tavily.com/welcome
+      - type: SignUp
+        url: https://app.tavily.com/home
+      - type: APIReference
+        url: https://docs.tavily.com/api-reference
+      - type: SDK
+        url: https://github.com/tavily-ai/tavily-python
+      - type: SDK
+        url: https://github.com/tavily-ai/tavily-js
+      - type: GitHubRepository
+        url: https://github.com/tavily-ai
+      - type: Pricing
+        url: https://www.tavily.com/pricing
+      - type: Authentication
+        url: https://docs.tavily.com/documentation/api-credentials
+    features:
+      - name: Search
+        description: Real-time web search with topic, depth, and time-range controls, p50 latency around 180ms.
+      - name: Extract
+        description: Pull clean text and metadata from one or many URLs.
+      - name: Crawl
+        description: Crawl websites with natural-language instructions and constraints.
+      - name: Map
+        description: Generate a structured map of a site's pages and structure.
+      - name: Research
+        description: Run AI-driven research tasks that aggregate, rank, and cite sources.
+      - name: Built-in Safeguards
+        description: Content validation and safety controls for agent-driven web access.
+      - name: Drop-in Integrations
+        description: First-class adapters for OpenAI, Anthropic, and Groq tool use.
+      - name: Predictable Latency
+        description: Engineered for high-throughput agent workloads with a 99.99% uptime SLA.
+    useCases:
+      - name: Agent Web Search Tool
+        description: Equip agents with a fast, citation-friendly web search tool.
+      - name: Real-Time Grounding
+        description: Ground LLM responses in fresh web context to reduce hallucinations.
+      - name: Site Extraction Pipelines
+        description: Crawl and extract content from competitor sites or documentation.
+      - name: AI Research Workflows
+        description: Run multi-source research tasks for analysts and knowledge workers.
+      - name: RAG Backends
+        description: Use search and extract endpoints as the retrieval layer behind RAG apps.
+    integrations:
+      - name: OpenAI
+      - name: Anthropic
+      - name: Groq
+      - name: LangChain
+      - name: LangGraph
+      - name: LlamaIndex
+      - name: CrewAI
+      - name: AutoGen
+      - name: Vercel AI SDK
+      - name: Model Context Protocol
+      - name: Databricks
+      - name: IBM
+    authentication:
+      - type: API Key
+        description: Bearer token authentication using API keys prefixed with tvly- in the Authorization header.
+common:
+  - type: Website
+    url: https://www.tavily.com
+  - type: Documentation
+    url: https://docs.tavily.com
+  - type: Blog
+    url: https://blog.tavily.com
+  - type: GitHubOrganization
+    url: https://github.com/tavily-ai
+  - type: Pricing
+    url: https://www.tavily.com/pricing
+  - type: TermsOfService
+    url: https://www.tavily.com/terms
+  - type: PrivacyPolicy
+    url: https://www.tavily.com/privacy
+  - type: Community
+    url: https://community.tavily.com
+  - type: X
+    url: https://x.com/tavilyai
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/tavily
+  - type: YouTube
+    url: https://www.youtube.com/@tavilyai
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
