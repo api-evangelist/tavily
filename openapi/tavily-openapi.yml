@@ -1,0 +1,79 @@
+openapi: 3.1.0
+info:
+  title: Tavily Web API
+  version: "1.0.0"
+  description: |
+    REST API for AI agents to search the web, extract page content, crawl
+    sites, map sitemaps, and run AI-driven research tasks. Authenticated
+    with a bearer API key (tvly- prefix).
+  contact:
+    name: Tavily
+    url: https://docs.tavily.com
+servers:
+  - url: https://api.tavily.com
+    description: Production
+security:
+  - bearerAuth: []
+paths:
+  /search:
+    post:
+      summary: Web search
+      description: Run a real-time web search query.
+      operationId: search
+      tags:
+        - Search
+      responses:
+        "200":
+          description: Search results
+  /extract:
+    post:
+      summary: Extract page content
+      description: Pull clean text and metadata from one or more URLs.
+      operationId: extract
+      tags:
+        - Extract
+      responses:
+        "200":
+          description: Extracted content
+  /crawl:
+    post:
+      summary: Crawl website
+      description: Crawl a website with natural-language instructions and constraints.
+      operationId: crawl
+      tags:
+        - Crawl
+      responses:
+        "200":
+          description: Crawl results
+  /map:
+    post:
+      summary: Map site structure
+      description: Generate a structured map of a site's pages and structure.
+      operationId: map
+      tags:
+        - Map
+      responses:
+        "200":
+          description: Sitemap structure
+  /research:
+    post:
+      summary: Run AI research task
+      description: Run an AI-driven research task that aggregates, ranks, and cites sources.
+      operationId: research
+      tags:
+        - Research
+      responses:
+        "200":
+          description: Research task created
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+tags:
+  - name: Search
+  - name: Extract
+  - name: Crawl
+  - name: Map
+  - name: Research
