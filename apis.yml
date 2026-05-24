@@ -134,6 +134,8 @@ common:
     url: https://www.linkedin.com/company/tavily
   - type: YouTube
     url: https://www.youtube.com/@tavilyai
+  - type: LLMsTxt
+    url: https://docs.tavily.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
