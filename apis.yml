@@ -53,13 +53,13 @@ apis:
         url: https://docs.tavily.com
       - type: GettingStarted
         url: https://docs.tavily.com/welcome
-      - type: SignUp
+      - type: Signup
         url: https://app.tavily.com/home
       - type: APIReference
         url: https://docs.tavily.com/api-reference
-      - type: SDK
+      - type: SDKs
         url: https://github.com/tavily-ai/tavily-python
-      - type: SDK
+      - type: SDKs
         url: https://github.com/tavily-ai/tavily-js
       - type: GitHubRepository
         url: https://github.com/tavily-ai
@@ -134,7 +134,7 @@ common:
     url: https://www.linkedin.com/company/tavily
   - type: YouTube
     url: https://www.youtube.com/@tavilyai
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.tavily.com/llms.txt
 maintainers:
   - FN: Kin Lane

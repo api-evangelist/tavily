@@ -2,17 +2,13 @@
   "repo": "tavily",
   "feeds": [
     {
-      "source": "https://tavily.com/blog",
-      "feed_url": "https://tavily.com/blog",
-      "title": "",
+      "source": "https://blog.tavily.com",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://docs.tavily.com",
-      "error": "HTTPError"
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 1,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:15:10Z",
+  "post_count": 2,
+  "agent_pulled": "2026-06-27"
 }
