@@ -112,6 +112,12 @@ apis:
       - type: API Key
         description: Bearer token authentication using API keys prefixed with tvly- in the Authorization header.
 common:
+  - type: TrustCenter
+    url: security/tavily-trust-center.yml
+  - type: DomainSecurity
+    url: security/tavily-domain-security.yml
+  - type: Authentication
+    url: authentication/tavily-authentication.yml
   - type: Website
     url: https://www.tavily.com
   - type: Documentation
