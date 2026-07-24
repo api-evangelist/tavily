@@ -1,0 +1,38 @@
+openapi: 3.1.0
+info:
+  title: Tavily Web Crawl Map API
+  version: 1.0.0
+  description: 'REST API for AI agents to search the web, extract page content, crawl
+
+    sites, map sitemaps, and run AI-driven research tasks. Authenticated
+
+    with a bearer API key (tvly- prefix).
+
+    '
+  contact:
+    name: Tavily
+    url: https://docs.tavily.com
+servers:
+- url: https://api.tavily.com
+  description: Production
+security:
+- bearerAuth: []
+tags:
+- name: Map
+paths:
+  /map:
+    post:
+      summary: Map site structure
+      description: Generate a structured map of a site's pages and structure.
+      operationId: map
+      tags:
+      - Map
+      responses:
+        '200':
+          description: Sitemap structure
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key

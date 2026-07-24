@@ -1,0 +1,38 @@
+openapi: 3.1.0
+info:
+  title: Tavily Web Crawl Search API
+  version: 1.0.0
+  description: 'REST API for AI agents to search the web, extract page content, crawl
+
+    sites, map sitemaps, and run AI-driven research tasks. Authenticated
+
+    with a bearer API key (tvly- prefix).
+
+    '
+  contact:
+    name: Tavily
+    url: https://docs.tavily.com
+servers:
+- url: https://api.tavily.com
+  description: Production
+security:
+- bearerAuth: []
+tags:
+- name: Search
+paths:
+  /search:
+    post:
+      summary: Web search
+      description: Run a real-time web search query.
+      operationId: search
+      tags:
+      - Search
+      responses:
+        '200':
+          description: Search results
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
