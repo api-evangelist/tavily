@@ -1,0 +1,166 @@
+{
+  "name": "Tavily",
+  "description": "Real-time search engine for AI agents and RAG workflows. Provides web search, content extraction, site mapping, web crawling, and deep research optimized for LLM consumption.",
+  "url": "https://api.tavily.com",
+  "version": "1.0.0",
+  "protocolVersion": "1.0",
+  "provider": {
+    "organization": "Tavily",
+    "url": "https://tavily.com"
+  },
+  "documentationUrl": "https://docs.tavily.com",
+  "iconUrl": "https://tavily.com/favicon.ico",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "securitySchemes": {
+    "apiKey": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Tavily API key passed as Bearer token for REST API"
+    },
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://mcp.tavily.com/mcp/",
+          "tokenUrl": "https://mcp.tavily.com/mcp/",
+          "scopes": {}
+        }
+      },
+      "description": "OAuth 2.0 authentication for MCP server connections"
+    }
+  },
+  "security": [
+    {
+      "apiKey": []
+    },
+    {
+      "oauth2": []
+    }
+  ],
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "web-search",
+      "name": "Web Search",
+      "description": "AI-optimized web search returning relevant results with content snippets and optional answer generation. Supports topic filtering (general, news, finance), search depth control, time-range filtering, and domain inclusion/exclusion.",
+      "tags": [
+        "search",
+        "web",
+        "research",
+        "news",
+        "information-retrieval",
+        "rag"
+      ],
+      "examples": [
+        "Search for the latest developments in quantum computing",
+        "Find news articles about AI regulation from the past week",
+        "Research best practices for Kubernetes autoscaling"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "content-extract",
+      "name": "Content Extract",
+      "description": "Extracts clean, structured content from one or more URLs. Strips navigation, ads, and boilerplate, returning text optimized for LLM consumption.",
+      "tags": [
+        "extract",
+        "scraping",
+        "content",
+        "parsing",
+        "url"
+      ],
+      "examples": [
+        "Extract the main article content from this URL",
+        "Get the text content from these documentation pages"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "web-crawl",
+      "name": "Web Crawl",
+      "description": "Crawls a website with configurable depth control, extracting content from discovered pages. Returns structured content from multiple pages within a domain.",
+      "tags": [
+        "crawl",
+        "spider",
+        "website",
+        "depth-search"
+      ],
+      "examples": [
+        "Crawl the documentation site at docs.example.com up to depth 3",
+        "Crawl example.com and extract all product pages"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "site-map",
+      "name": "Site Map",
+      "description": "Maps the structure of a website, discovering all accessible URLs and their relationships. Returns a comprehensive URL list for a given domain.",
+      "tags": [
+        "map",
+        "sitemap",
+        "url-discovery",
+        "website-structure"
+      ],
+      "examples": [
+        "Map all URLs on docs.example.com",
+        "Discover the site structure of example.com"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "deep-research",
+      "name": "Deep Research",
+      "description": "Async deep research that searches, extracts, and synthesizes information into comprehensive reports. Supports streaming and polling for long-running research tasks.",
+      "tags": [
+        "research",
+        "report",
+        "analysis",
+        "synthesis",
+        "deep-search"
+      ],
+      "examples": [
+        "Research the competitive landscape for AI search APIs",
+        "Generate a comprehensive report on recent advances in RAG architectures",
+        "Analyze the pros and cons of different vector databases"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/event-stream"
+      ]
+    }
+  ]
+}
