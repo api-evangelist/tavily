@@ -1,0 +1,22 @@
+{
+  "provider": "tavily",
+  "sources": [
+    "tavily-crawl-api-openapi.yml",
+    "tavily-extract-api-openapi.yml",
+    "tavily-map-api-openapi.yml",
+    "tavily-research-api-openapi.yml",
+    "tavily-search-api-openapi.yml"
+  ],
+  "outputs": [
+    "tavily-crawl-api-openapi.yml",
+    "tavily-extract-api-openapi.yml",
+    "tavily-map-api-openapi.yml",
+    "tavily-research-api-openapi.yml",
+    "tavily-search-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
