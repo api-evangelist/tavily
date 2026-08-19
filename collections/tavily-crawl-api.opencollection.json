@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Tavily Web Crawl API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Crawl",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Crawl website",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.tavily.com/crawl"
+          },
+          "docs": "Crawl a website with natural-language instructions and constraints."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

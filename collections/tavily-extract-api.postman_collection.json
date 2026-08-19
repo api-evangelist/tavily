@@ -1,0 +1,109 @@
+{
+  "item": [
+    {
+      "id": "2d6fb418-30ce-4fc3-ab86-d39ad0a7ba5f",
+      "name": "Extract",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "89fba183-d461-4d8a-9d88-5ccd31bc68dd",
+          "name": "Extract page content",
+          "request": {
+            "name": "Extract page content",
+            "description": {
+              "content": "Pull clean text and metadata from one or more URLs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "extract"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9b50baa5-f25f-4e71-99ac-649463206515",
+              "name": "Extracted content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "extract"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.tavily.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "03b8d0a9-68c4-4dd3-874b-6689804de541",
+    "name": "Tavily Web Crawl Extract API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for AI agents to search the web, extract page content, crawl\nsites, map sitemaps, and run AI-driven research tasks. Authenticated\nwith a bearer API key (tvly- prefix).\n\n\nContact Support:\n Name: Tavily",
+      "type": "text/plain"
+    }
+  }
+}

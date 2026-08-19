@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Tavily Web Crawl Extract API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Extract",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Extract page content",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.tavily.com/extract"
+          },
+          "docs": "Pull clean text and metadata from one or more URLs."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

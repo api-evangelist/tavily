@@ -1,0 +1,109 @@
+{
+  "item": [
+    {
+      "id": "2da0cfd8-7f5a-498b-aa02-8adf917ac08c",
+      "name": "Research",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8da6de7d-d8d3-45ff-a282-d3a52121523c",
+          "name": "Run AI research task",
+          "request": {
+            "name": "Run AI research task",
+            "description": {
+              "content": "Run an AI-driven research task that aggregates, ranks, and cites sources.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "research"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ec649f16-c088-49ad-a87e-24fb35ce278f",
+              "name": "Research task created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "research"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.tavily.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "7196e977-b0a6-4d1a-b160-6bdf397004e8",
+    "name": "Tavily Web Crawl Research API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for AI agents to search the web, extract page content, crawl\nsites, map sitemaps, and run AI-driven research tasks. Authenticated\nwith a bearer API key (tvly- prefix).\n\n\nContact Support:\n Name: Tavily",
+      "type": "text/plain"
+    }
+  }
+}

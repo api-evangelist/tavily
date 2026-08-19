@@ -1,0 +1,109 @@
+{
+  "item": [
+    {
+      "id": "75cd01e9-7e87-4e7b-87d0-8cadb8dda586",
+      "name": "Crawl",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "edf44c2b-aeb3-4d32-aa1f-ea6dd6db5a5c",
+          "name": "Crawl website",
+          "request": {
+            "name": "Crawl website",
+            "description": {
+              "content": "Crawl a website with natural-language instructions and constraints.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "crawl"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1cdad1de-ef98-4b3a-bda3-b9887bb6e636",
+              "name": "Crawl results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "crawl"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.tavily.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b1baf6ef-6cb1-472b-a2fd-df3fca6624d3",
+    "name": "Tavily Web Crawl API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for AI agents to search the web, extract page content, crawl\nsites, map sitemaps, and run AI-driven research tasks. Authenticated\nwith a bearer API key (tvly- prefix).\n\n\nContact Support:\n Name: Tavily",
+      "type": "text/plain"
+    }
+  }
+}

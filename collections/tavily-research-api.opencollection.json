@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Tavily Web Crawl Research API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Research",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run AI research task",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.tavily.com/research"
+          },
+          "docs": "Run an AI-driven research task that aggregates, ranks, and cites sources."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

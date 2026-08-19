@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Tavily Web Crawl Map API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Map",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Map site structure",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.tavily.com/map"
+          },
+          "docs": "Generate a structured map of a site's pages and structure."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
