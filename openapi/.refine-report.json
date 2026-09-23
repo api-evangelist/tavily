@@ -1,11 +1,7 @@
 {
   "provider": "tavily",
   "sources": [
-    "tavily-crawl-api-openapi.yml",
-    "tavily-extract-api-openapi.yml",
-    "tavily-map-api-openapi.yml",
-    "tavily-research-api-openapi.yml",
-    "tavily-search-api-openapi.yml"
+    "_original/tavily-openapi.yml"
   ],
   "outputs": [
     "tavily-crawl-api-openapi.yml",
@@ -17,6 +13,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "tavily-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "tavily-crawl-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tavily-extract-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tavily-map-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tavily-research-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tavily-search-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
