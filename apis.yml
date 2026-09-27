@@ -53,6 +53,7 @@ tags:
   - LangChain
   - LlamaIndex
   - Real-Time
+  - A2A
 tags_raw:
   - Search
   - Web Search
@@ -66,6 +67,7 @@ tags_raw:
   - LangChain
   - LlamaIndex
   - Real-Time
+  - A2A
 url: https://raw.githubusercontent.com/api-evangelist/tavily/refs/heads/main/apis.yml
 created: '2026-05-23'
 modified: '2026-05-23'
@@ -80,6 +82,13 @@ apis:
   humanURL: https://docs.tavily.com
   baseURL: https://api.tavily.com
   tags:
+  - Search
+  - Extract
+  - Crawl
+  - Maps
+  - Research
+  - REST
+  tags_raw:
   - Search
   - Extract
   - Crawl
@@ -177,6 +186,8 @@ apis:
   humanURL: https://docs.tavily.com
   baseURL: https://api.tavily.com
   tags:
+  - Maps
+  tags_raw:
   - Map
   properties:
   - type: OpenAPI
@@ -243,3 +254,10 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-a2a:
+  verified: true
+  probed: '2026-09-26'
+  url: "https://www.tavily.com/.well-known/agent-card.json"
+  grade: "near-conformant"
+  protocol_version: "1.0"
+  control: 404
